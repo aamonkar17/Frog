@@ -15,6 +15,10 @@ public class Main {
             }
 
             //TODO default constructor (no arguments)
+            public Fraction(){
+                numerator = 0;
+                denominator = 0;
+            }
 
             public int getNum()
             {
@@ -33,12 +37,24 @@ public class Main {
                 return result;
             }
 
-            // TODO  subtract()
+            // TODO subtract()
+            public Fraction subtract(Fraction other){
+                int n = this.numerator*other.denominator - this.denominator*other.numerator;
+                int d = this.denominator * other.getDenom();
+            }
+
 
             // TODO multiply()
+            public Fraction multiply(Fraction other){
+                int n = this.numerator*other.denominator * this.denominator*other.numerator;
+                int d = this.denominator * other.getDenom();
+            }
 
             // TODO toString()
 
+            public String toString() {
+                System.out.println(numerator + "/" + denominator);
+            }
 
             public static void main(String[] args) {
                 Fraction f1 = new Fraction(3,4);	// create an instance of fraction
