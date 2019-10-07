@@ -63,6 +63,9 @@ public class Main {
                 Fraction f3 = f1.add(f2);			// add 2 fractions
                 System.out.println("3/4 + 4/5 = " + f3);	// print the answer
 
+                Fraction f4 = f1.multiply(f2);
+                System.out.println(f4);
+
 		/*
 		Fraction f4 = f1.subtract(f2);
 		System.out.println(f1 + " - " + f2 + " = " + f4);
