@@ -1,3 +1,6 @@
+//Ankit Amonkar
+// Frog Project
+
 package com.company;
 
     public class Frog {
@@ -100,7 +103,7 @@ Hi I am Freddy the frog and I live at 0 2
 Hi I am Francine the frog and I live at 0 2
 */
 
-/*My Ouput
+/*My Output
 Freddy
 Yum
 Hi I am Freddy the frog and I live at 3 5

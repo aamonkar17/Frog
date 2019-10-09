@@ -1,3 +1,5 @@
+//Ankit Amonkar
+// Fraction Project
 package com.company;
 
 public class Fraction {
@@ -85,7 +87,7 @@ public class Fraction {
             }
 
         }
-        
+
 /*
 3/4 + 4/5 = 31/20
 3/4 - 4/5 = -1/20
