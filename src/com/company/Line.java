@@ -94,3 +94,15 @@ public class Line {
     }
 
 }
+
+/* Output
+Line with endpoints (-1.0, -3.0) and (2.0, 1.0)
+Slope = 1.3333333333333333
+Line with endpoints (0.0, 0.0) and (3.0, 4.0)
+Slope = 1.3333333333333333
+Parallel? true
+distance = 5.0
+Midpoint = (0.5, -1.0)
+distance = 5.0
+Same length? true
+ */
