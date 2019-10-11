@@ -3,7 +3,7 @@ package com.company;
 public class Line {
     private Point end1;
     private Point end2;
-    private Point end3;
+    private Point distance1;
     private Point end4;
     private Point end5;
 
@@ -18,25 +18,26 @@ public class Line {
         end1 = new Point();
         end2 = new Point();
     }
-/*
+
     public double distance()
     {
-        double x3 = (double)()
+        double distance1 = Math.sqrt(Math.pow(end2.getX() - end1.getX(), 2) + Math.pow(end2.getY() - end1.getY(), 2));
+        return distance1;
         //You may find Math.pow(base, power) and Math.sqrt(num) useful
     }
-    */
+
     public Point midpoint()
     {
-       double x4 = ((end1.getX() + end2.getX()) * 0.5);
-       double y4 = ((end1.getY()) + end2.getY() * 0.5);
-       end4 = new Point(x4,y4);
+        double x4 = ((end1.getX() + end2.getX()) * 0.5);
+        double y4 = ((end1.getY()) + end2.getY() * 0.5);
+        end4 = new Point(x4,y4);
+        return end4;
     }
-/*
+
     public boolean sameLength(Line otherLine)
     {
-
     }
-    */
+
     public double slope()
     {
         double m;
