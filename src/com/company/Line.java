@@ -3,9 +3,6 @@ package com.company;
 public class Line {
     private Point end1;
     private Point end2;
-    private Point distance1;
-    private Point end4;
-    private Point end5;
 
     public Line(double x1, double y1, double x2, double y2)
     {
@@ -30,7 +27,7 @@ public class Line {
     {
         double x4 = ((end1.getX() + end2.getX()) * 0.5);    //Averages the two x values of end1 and end2
         double y4 = ((end1.getY() + end2.getY()) * 0.5);    //Averages the two y values of end1 and end2
-        end4 = new Point(x4,y4);
+        Point end4 = new Point(x4, y4);
         return end4;
     }
 

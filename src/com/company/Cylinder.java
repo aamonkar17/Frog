@@ -1,6 +1,28 @@
 package com.company;
 
 public class CylinderTest {
+    private double base;
+    private double height;
+    private double h;
+    private double r;
+
+    public CylinderTest(double height, double radius) {
+        h = height;
+        r = radius;
+        double c1 = new Circle(r);
+        c1 *= h;
+    }
+
+    public double vol() {
+        double v = Math.PI * Math.pow(r, 2) * h;
+        return v;
+    }
+
+    public double sa() {
+        double s = 2 * Math.PI * r * h + 2 * Math.PI * Math.pow (r, 2);
+        return s;
+    }
+
     public static void main(String[] args) {
 
         Cylinder cyl = new Cylinder(5,2);
