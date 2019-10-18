@@ -9,7 +9,7 @@ public class CylinderTest {
     public CylinderTest(double height, double radius) {
         h = height;
         r = radius;
-        double c1 = new Circle(r);
+        Circle c1 = new Circle(r);
         c1 *= h;
     }
 
