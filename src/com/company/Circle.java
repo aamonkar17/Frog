@@ -1,15 +1,17 @@
+//Ankit Amonkar
+//Circle
 package com.company;
 
 public class Circle {
     private double radius;
     private Circle c1;
 
-    public Circle(double radius){   //constructor
-        c1 = new Circle(radius);
+    public Circle(double r){   //constructor
+        radius = r;
     }
 
     public Circle () {    //default constructor
-        c1 = new Circle();
+        radius = 1;
     }
 
     public double area(){  //method to find area of circle

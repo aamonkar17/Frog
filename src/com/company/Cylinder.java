@@ -1,3 +1,5 @@
+//Ankit Amonkar
+//Cylinder
 package com.company;
 
 public class Cylinder {
@@ -7,19 +9,19 @@ public class Cylinder {
     private double r;
     private Circle c1;
 
-    public Cylinder(double height, double radius) {
+    public Cylinder(double radius, double height) {
         h = height;
         r = radius;
         c1 = new Circle(r);
     }
 
     public double vol() {
-        double v = Math.PI * Math.pow(r, 2) * h;
+        double v = c1.area() * h;
         return v;
     }
 
     public double sa() {
-        double s = (2 * Math.PI * r * h) + (2 * Math.PI * Math.pow(r, 2));
+        double s = ((c1.circumference() * h) + 2*c1.area());
         return s;
     }
 }
